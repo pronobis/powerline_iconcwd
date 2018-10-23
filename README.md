@@ -18,19 +18,19 @@ The segment can be installed with pip:
 pip install git+https://github.com/pronobis/powerline_iconcwd.git
 ```
 
-The segment uses an additional custom highlight group `cwd:icon`. This group must be defined in `.config/powerline/colorschemes/default.json`. A custom color can be defined in `.config/powerline/colors.json`.
+It uses an additional custom highlight group `cwd:icon`. This group must be defined in `.config/powerline/colorschemes/default.json`. A custom color can be defined in `.config/powerline/colors.json`.
 
-For example, to get the result shown in the screenshot, add:
+For example, to get the result shown in the screenshot, add to `.config/powerline/colorschemes/default.json`:
 
 ```json
 {
   "groups": {
-    "cwd:icon":                   { "fg": "white",           "bg": "iconcwd", "attrs": [] }
+    "cwd:icon": { "fg": "white", "bg": "iconcwd", "attrs": [] }
   }
 }
 ```
 
-to `.config/powerline/colorschemes/default.json`, and:
+and to `.config/powerline/colors.json`:
 
 ```json
 {
@@ -40,9 +40,7 @@ to `.config/powerline/colorschemes/default.json`, and:
 }
 ```
 
-to `.config/powerline/colors.json`.
-
-The segment uses default icons for the home and root folders. To override those, add the following to your default top theme:
+The segment uses default icons for the home and root folders (if `.powerline_icon` is not found). To override those, add the following to your default top theme:
 
 ```json
 {
