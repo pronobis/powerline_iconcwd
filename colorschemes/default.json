@@ -1,0 +1,5 @@
+{
+  "groups": {
+    "cwd:icon":                   { "fg": "white",           "bg": "iconcwd", "attrs": [] }
+  }
+}
